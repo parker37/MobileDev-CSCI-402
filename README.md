@@ -11,8 +11,8 @@ Time spent: **2** hours spent in total
 
 The following **required** functionality is complete:
 
-* [ ] User can enter a bill amount, choose a tip percentage, and see the tip and total values.
-* [ ] User can select between tip percentages by tapping different values on the segmented control and the tip value is updated accordingly
+* [x] User can enter a bill amount, choose a tip percentage, and see the tip and total values.
+* [x] User can select between tip percentages by tapping different values on the segmented control and the tip value is updated accordingly
 
 The following **optional** features are implemented:
 
@@ -28,8 +28,8 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://imgur.com/WPp85Og' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
+<blockquote class="imgur-embed-pub" lang="en" data-id="p2xjZlA"  ><a href="//imgur.com/p2xjZlA">checkout app</a></blockquote>
 GIF created with [EZGif](http://ezgif.com/).
 
 ## Notes
