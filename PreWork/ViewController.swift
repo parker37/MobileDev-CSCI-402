@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var tipControl: UISegmentedControl!
     @IBOutlet weak var totalLabel: UILabel!
     
+    let defaults = UserDefaults.standard
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +22,11 @@ class ViewController: UIViewController {
     }
     
     
+    
     @IBAction func calculateTip(_ sender: Any) {
+        let currency = defaults.string(forKey: "currency") ?? "$"
+        let tipType = defaults.bool(forKey: "tipType")
+        
         //Get bill amount from text field input
         let bill = Double(billAmountTextField.text!) ?? 0
         
@@ -31,9 +36,9 @@ class ViewController: UIViewController {
         let total = bill + tip
         
         //Update Tip Amount Label
-        tipAmountLabel.text = String(format: "$%.2f", tip)
+        tipAmountLabel.text = String(format: "\(currency)%.2f", tip)
         //Update Total Amount
-        totalLabel.text = String(format: "$%.2f", total)
+        totalLabel.text = String(format: "\(currency)%.2f", total)
     }
     
 
