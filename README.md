@@ -28,8 +28,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-![checkout app](checkoutApp-walkthrough.gif)
-<blockquote class="imgur-embed-pub" lang="en" data-id="p2xjZlA"  ><a href="//imgur.com/p2xjZlA">Checkout App Walkthrough</a></blockquote>
+![checkout app](appwalkthrough.gif)
 GIF created with [EZGif](http://ezgif.com/).
 
 ## Notes
