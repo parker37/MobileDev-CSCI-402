@@ -12,11 +12,14 @@ class SettingsViewController: UIViewController {
     @IBOutlet weak var currencyControl: UISegmentedControl!
     
     let defaults = UserDefaults.standard
-    
+    let currencyList = ["$", "¥", "₱", "€", "£", "₩"]
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        currencyControl.selectedSegmentIndex = Int(currencyList.firstIndex(of: defaults.string(forKey: "currency") ?? "$")!)
+        
+        customTipSwitch.isOn = defaults.bool(forKey: "customTipType")
     }
     
 
@@ -30,7 +33,6 @@ class SettingsViewController: UIViewController {
     }
     */
     @IBAction func chooseCurrency(_ sender: Any) {
-        let currencyList = ["$", "¥", "₱", "€", "£", "₩"]
         let currency = currencyList [currencyControl.selectedSegmentIndex]
         
         defaults.set(currency, forKey: "currency")
@@ -40,7 +42,7 @@ class SettingsViewController: UIViewController {
     @IBAction func setTipType(_ sender: Any) {
         let tipType: Bool = customTipSwitch.isOn
         
-        defaults.set(tipType, forKey: "tipType")
+        defaults.set(tipType, forKey: "customTipType")
         defaults.synchronize()
         
     }
