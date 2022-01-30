@@ -17,7 +17,7 @@ The following **required** functionality is complete:
 The following **optional** features are implemented:
 
 * [ ] UI animations
-* [ ] Remembering the bill amount across app restarts (if <10mins)
+* [x] Remembering the bill amount across app restarts (if <10mins)
 * [ ] Using locale-specific currency and currency thousands separators.
 * [ ] Making sure the keyboard is always visible and the bill amount is always the first responder. This way the user doesn't have to tap anywhere to use this app. Just launch the app and start typing.
 
@@ -33,7 +33,7 @@ GIF created with [EZGif](http://ezgif.com/).
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+While, creating this app, I struggled with figuring out how to toggle using the segmented tip control vs the text field tip input. After researching information on this, I was able to find a way to implement this.
 
 ## License
 
