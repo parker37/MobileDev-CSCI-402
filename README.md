@@ -30,6 +30,7 @@ The following **additional** features are implemented:
 Here's a walkthrough of implemented user stories:
 
 ![checkout app](appwalkthrough.gif)
+
 GIF created with [EZGif](http://ezgif.com/).
 
 ## Notes
