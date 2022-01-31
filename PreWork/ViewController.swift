@@ -123,10 +123,13 @@ class ViewController: UIViewController {
                 changedNum = String(changedNum.dropFirst())
             }
             
-            
-            changedNum.append(".\(intAfterDecimal)")
-            
-            return changedNum
+            if intAfterDecimal < 10 {
+                if intAfterDecimal == 0 {
+                    return changedNum + ".00"
+                }
+                return changedNum + ".0" + String(intAfterDecimal)
+            }
+            return changedNum + "." + String(intAfterDecimal)
             
         } else {
             let numAfterDecimal = (num) - Double(Int(num))
