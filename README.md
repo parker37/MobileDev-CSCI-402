@@ -35,7 +35,7 @@ GIF created with [EZGif](http://ezgif.com/).
 
 ## Notes
 
-While, creating this app, I struggled with figuring out how to toggle using the segmented tip control vs the text field tip input. After researching information on this, I was able to find a way to implement this.
+While, creating this app, I struggled with figuring out how to toggle using the segmented tip control vs the text field tip input. After researching information on this, I was able to find a way to implement this. I, also, had to research float point precision to understand why sometimes rounded values weren't accurate.
 
 ## License
 
