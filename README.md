@@ -24,6 +24,7 @@ The following **optional** features are implemented:
 The following **additional** features are implemented:
 
 * [x] User can toggle whether they want to enter a custom tip amount
+* [x] Keyboard Type is a numpad that has numbers 0-9 and a decimal point only
 
 ## Video Walkthrough
 
